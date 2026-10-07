@@ -7,6 +7,7 @@
     "make": "lamdera make src/Frontend.elm src/Backend.elm src/UiViewer.elm",
     "deploy": "elm-test-rs --compiler $(which lamdera) && npx elm-review && lamdera deploy",
     "end-to-end-tests": "node tests/EndToEndTestsRunner.js",
+    "prototype:guild-svg": "node scripts/guild-curves-svg-prototype.mjs",
     "encryption-port-tests": "node tests/EncryptionPortTests.js",
     "service-worker-tests": "node tests/ServiceWorkerTests.js",
     "backup-downloader": "lamdera make scripts/backup-downloader/src/Backup.elm --output scripts/backup-downloader/BackupElm.js && node scripts/backup-downloader/run.js",
